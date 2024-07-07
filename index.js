@@ -53,7 +53,7 @@ app.delete('/teas/:id',(req,res)=>{
         return res.status(404).send('Not found')
     }
     teaData.splice(index,1)
-    return res.status(204).send('item deleted')
+    res.status(204).send('item deleted')
 })
 
 app.listen(port, () =>{
